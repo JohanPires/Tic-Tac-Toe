@@ -1,0 +1,90 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: rgb(71, 70, 70);
+  font-family: "Rubik", sans-serif;
+}
+
+h1 {
+  font-size: 6rem;
+  color: yellowgreen;
+}
+
+.board {
+  width: 300px;
+  height: 300px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 40px 0;
+}
+.cell {
+  width: 30%;
+  aspect-ratio: 1/1;
+  background: rgb(208, 207, 207);
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 4rem;
+  font-weight: 700;
+}
+
+.point {
+  width: 300px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 20px;
+  color: rgb(208, 207, 207);
+}
+
+span {
+  color: yellowgreen;
+}
+
+#reset {
+  padding: 15px;
+  background-color: yellowgreen;
+  border-radius: 100px;
+  border: 1px yellowgreen;
+  transition: 0.2s;
+}
+
+button:hover {
+  transform: scale(1.05);
+}
+
+.results {
+  position: absolute;
+  visibility: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 40px;
+  background: rgb(71, 70, 70, 0.9);
+  border-radius: 20px;
+  box-shadow: 1px 2px 4px 0 #0000009e;
+}
+
+.results p {
+  font-size: 1.5rem;
+}
+
+.results button {
+  width: 60%;
+  padding: 7px;
+  margin: 20px auto 0;
+  transition: none;
+  background-color: yellowgreen;
+  border-radius: 100px;
+  border: 1px yellowgreen;
+}
